@@ -1,10 +1,8 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Bright%20Future%20Academy";
-
 const WhatsAppFloat = () => (
   <a
-    href={WHATSAPP_LINK}
+    href={`${import.meta.env.VITE_WHATSAPP_API}?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Bright%20Future%20Academy`}
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Chat on WhatsApp"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MessageCircle, Menu, X, Phone } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Bright%20Future%20Academy";
+const WHATSAPP_LINK = "https://wa.me/919999999999";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -37,7 +37,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href={WHATSAPP_LINK}
+            href={`${import.meta.env.VITE_WHATSAPP_API}?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Bright%20Future%20Academy`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
